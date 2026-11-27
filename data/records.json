@@ -1,0 +1,131 @@
+{
+  "sectors": [
+    {
+      "id": "flat-east",
+      "access": "stepfree",
+      "origin": "east"
+    },
+    {
+      "id": "flat-west",
+      "access": "stairs",
+      "origin": "west"
+    }
+  ],
+  "segments": [
+    {
+      "id": "ea",
+      "nodes": [
+        "east",
+        "platform"
+      ],
+      "access": [
+        "stepfree",
+        "stairs"
+      ],
+      "crews": 1
+    },
+    {
+      "id": "wa",
+      "nodes": [
+        "west",
+        "platform"
+      ],
+      "access": [
+        "stairs"
+      ],
+      "crews": 2
+    },
+    {
+      "id": "ao",
+      "nodes": [
+        "platform",
+        "outside-main"
+      ],
+      "access": [
+        "stepfree",
+        "stairs"
+      ],
+      "crews": 1
+    },
+    {
+      "id": "es",
+      "nodes": [
+        "east",
+        "outside-side"
+      ],
+      "access": [
+        "stepfree"
+      ],
+      "crews": 1
+    },
+    {
+      "id": "ws",
+      "nodes": [
+        "west",
+        "outside-side"
+      ],
+      "access": [
+        "stairs"
+      ],
+      "crews": 1
+    }
+  ],
+  "exits": [
+    {
+      "id": "outside-main"
+    },
+    {
+      "id": "outside-side"
+    }
+  ],
+  "inspections": [
+    {
+      "id": "paper-12-v1",
+      "paper": "paper-12",
+      "rev": 1,
+      "segment": "es",
+      "state": "closed",
+      "observedAt": "2027-02-01T08:10:00Z"
+    },
+    {
+      "id": "paper-12-v2",
+      "paper": "paper-12",
+      "rev": 2,
+      "segment": "ao",
+      "state": "closed",
+      "observedAt": "2027-02-01T08:10:00Z"
+    },
+    {
+      "id": "paper-14-v1",
+      "paper": "paper-14",
+      "rev": 1,
+      "segment": "es",
+      "state": "cleared",
+      "observedAt": "2027-02-01T08:40:00Z"
+    }
+  ],
+  "moves": [
+    {
+      "id": "move-h",
+      "crew": "ochre",
+      "sector": "flat-east",
+      "route": [
+        "ea",
+        "ao"
+      ],
+      "from": "2027-02-01T08:00:00Z",
+      "until": "2027-02-01T09:00:00Z"
+    },
+    {
+      "id": "move-k",
+      "crew": "blue",
+      "sector": "flat-west",
+      "route": [
+        "wa",
+        "ao"
+      ],
+      "from": "2027-02-01T08:30:00Z",
+      "until": "2027-02-01T09:30:00Z"
+    }
+  ]
+}
