@@ -127,5 +127,38 @@
       "from": "2027-02-01T08:30:00Z",
       "until": "2027-02-01T09:30:00Z"
     }
+  ],
+  "siteTickets": [
+    {
+      "id": "ticket-h",
+      "move": "move-h",
+      "site": "ao",
+      "enteredAt": "2027-02-01T08:02:00Z",
+      "crew": "ochre"
+    }
+  ],
+  "hazardShifts": [
+    {
+      "id": "shift-ao1",
+      "incident": "clear-ao1",
+      "segment": "ao",
+      "crew": "blue",
+      "at": "2027-02-01T08:22:00Z"
+    },
+    {
+      "id": "shift-ao2",
+      "incident": "clear-ao2",
+      "segment": "ao",
+      "crew": "ochre",
+      "at": "2027-02-01T08:30:00Z"
+    },
+    {
+      "id": "return-ao1",
+      "incident": "clear-ao1",
+      "segment": "ao",
+      "crew": "blue",
+      "at": "2027-02-01T08:35:00Z",
+      "reported": "returned"
+    }
   ]
 }

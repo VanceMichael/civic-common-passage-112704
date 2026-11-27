@@ -25,6 +25,16 @@ test("共享楼梯段、无障碍侧路和巡查地点更正", () => {
     "moves",
     "route",
     "segments"
+  ],
+  [
+    "siteTickets",
+    "move",
+    "moves"
+  ],
+  [
+    "hazardShifts",
+    "segment",
+    "segments"
   ]
 ]) {
     const ids = new Set(data[related].map((row) => row.id));
